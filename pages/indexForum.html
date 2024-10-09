@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/styleForum.css">
+    <script src="../js/scriptNewPost.js"></script>
+    <script src="../js/scriptSettingsDropdown.js"></script>
+    <script src="../js/scriptDarkMode.js"></script>
+    <title>PC Picker Forums</title>
+</head>
+<body>
+    <header>
+        <div class="topPart">
+            <div class="tPBorder"><img src="../img/logo.png" alt="PC Picker Logo"></div>
+            <div class="tPBorder"><a href="../indexHome.html"><h2>PC Picker</h2></a></div>
+            <div class="tPBorder">
+                <div class="tPBorderR">
+                    <a id="authStatus">Log In | Sign Up</a>
+                    <div class="dropdown">
+                        <img src="../img/settings.png" class="settingsIcon" id="settingsIcon" alt="Settings">
+                        <div class="dropdown-content" id="dropdownContent">
+                            <a href="#" id="darkMode">Toggle Dark Mode</button>
+                            <a href="#" id="logOut">Log Out</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="headerButtonGroup">
+            <a class="headerButton" href="../indexHome.html">Home</a>
+            <a class="headerButton" href="indexShop.html">Shop</a>
+            <a class="headerButton" href="indexServices.html">Services</a>
+            <a class="headerButton" href="indexForum.html">Forums</a>
+            <a class="headerButton" href="indexAbout.html">About</a>
+        </div>
+    </header>
+
+    <div class="content">
+        <div class="create">
+            <h2>Create a post</h2>
+            <div>
+                <input type="text" class="createposttitle" id="createposttitle" placeholder="Title of your post" required><br>
+                <textarea class="createpostcontent" id="createpostcontent" placeholder="Write what you want to compare with?" required></textarea><br>
+                <button id="createpost" onclick="createpostSubmit()">Post</button>
+            </div>
+        </div>
+        <div class="newpost" id="newPost"></div>
+
+        <div class="post" id="examplePost01">
+            <h1 class="posttitle">What is a Bottleneck?</h1>
+            <h6 class="postuser">By: FunkyTown69</h6>
+            <p class="postcontent">Can you please tell me what is a bottleneck?</p>
+            <p class="comment"><b>BananaMaam:</b> A PC bottleneck is when your main components such as CPU, RAM, and Video card can't work together quickly enough to keep up with the demands of your computer.</p>
+            <div class="replyContainer"></div>
+            <button class="replyButton" onclick="createReply('examplePost01')">Reply</button>
+        </div>
+        <div class="post" id="examplePost02">
+            <h1 class="posttitle">Anything better than Intel?</h1>
+            <h6 class="postuser">By: n0vemberDAWN</h6>
+            <p class="postcontent">Sure, I might think Ryzen is a better one than Intel as recommended by the consult. But still I am unsure whether to trust Ryzen.</p>
+            <p class="comment"><b>BriAnDeeCy: </b>Ryzen is better if you want to same money and have the same performance than the more expensive intel.</p>
+            <div class="replyContainer"></div>
+            <button onclick="createReply('examplePost02')">Reply</button>
+        </div>
+        <div class="post" id="examplePost03">
+            <h1 class="posttitle">What is a good GPU for under $500?</h1>
+            <h6 class="postuser">By: mr1_softinwet1</h6>
+            <p class="postcontent">I got money from my Pops which is about 600$, and I want to upgrade my GPU. Anything?</p>
+            <p class="comment"><b>braindeads: </b>Some good choices would be the rx 7700xt, rtx 4060ti or rx 7600xt it still depends on what your cpu is tho.</p>
+            <div class="replyContainer"></div>
+            <button id="createreply" onclick="createReply('examplePost03')">Reply</button>
+        </div>
+        <div class="post" id="examplePost04">
+            <h1 class="posttitle">What is a psu rating?</h1>
+            <h6 class="postuser">By: KNACKGAMER</h6>
+            <p class="postcontent">what are this ratings in a psu like why are there bronze, silver, gold?</a></p>
+            <p class="comment"><b>pcmasterrace: </b>Efficiency ratings for power supplies certainly lend themselves to that misperception, because the differences between 80 Plus (also known as 80 Plus White), 80 Plus Bronze, 80 Plus Silver, 80 Plus Gold, 80 Plus Platinum, and 80 Plus Titanium power supplies aren’t exactly immediately clear. But dig into how the system works, and you’ll see that you may get by just fine with an 80 Plus White power supply—or perhaps need a Platinum-rated one over a Bronze-rated one.</p>
+            <div class="replyContainer"></div>
+            <button id="createreply" onclick="createReply('examplePost04')">Reply</button>
+        </div>
+        <div class="post" id="examplePost05">
+            <h1 class="posttitle">Why is this website so incomplete?</h1>
+            <h6 class="postuser">By: definetely_not_ron_k</h6>
+            <p class="postcontent">Everytime I go to the buttons of Sidebars, It gives me a link to someones music playlist (probably the admins of this website). Also the Log-In didn't work even if I somehow got a free account.</p>
+            <p class="comment"><b>defnotYze: </b>you lazy</p>
+            <div class="replyContainer"></div>
+            <button id="createreply" onclick="createReply('examplePost05')">Reply</button>
+        </div>
+        <div class="post" id="examplePost06">
+            <h1 class="posttitle">What is a good GPU for the Ryzen 5 5500?</h1>
+            <h6 class="postuser">By: BriAnDeeCy</h6>
+            <p class="postcontent">I used Ryzen 5 5500 a long while now but my GPU cannot handle it in modern version of Windows for some reason. Any GPU you guys think is compatible with my Ryzen 5 5500?</p>
+            <p class="comment"><b>SWEEThomeALABAMA: </b>I'm not familiar with the pricing in your region, but as a rule the 3050 is usually not a good option. The 6600 series of Radeon cards are great for the price usually, but maybe also worth considering the Intel A750?</p>
+            <div class="replyContainer"></div>
+                <button id="createreply" onclick="createReply('examplePost06')">Reply</button>
+        </div>
+    </div>
+
+    <footer>
+        <p>(c) Balanon and Quodala Team 2024, All your rights are reserved for us.</p>
+    </footer>
+</body>
+</html>

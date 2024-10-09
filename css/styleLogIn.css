@@ -1,0 +1,64 @@
+.mainPage {
+    margin-top: 5%;
+}
+
+.inForm {
+    display: block;
+    justify-self: center;
+    justify-content: left;
+    text-align: left;
+    background-color: #da8bff;
+    margin: 3% 25% 0% 25%;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+form {
+    display: fixed;
+}
+
+.eForm {
+    margin: 5% 5% 5% 5%;
+}
+
+.backButton {
+    align-self: left;
+    justify-self: left;
+    padding: 1%;
+    box-shadow: 0 0 16px rgba(0, 0, 0, 0.2);
+    font-size: 16px;
+    text-align: center;
+    border: #5c1550;
+    border-style: solid;
+    border-radius: 1px;
+    font-weight: bold;
+}
+
+.continueAs {
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 20px;
+}
+
+a img {
+    max-width: 50px;
+    max-height: 50px;
+    margin-left: 15%;
+}
+
+body.darkTheme {
+    background-color: #121212;
+}
+
+.inForm,
+.backButton,
+.continueAs {
+    color: black;
+}
+
+.backButton {
+    background-color: #da8bff;
+}
+
+@media (max-width: 768px) {
+}

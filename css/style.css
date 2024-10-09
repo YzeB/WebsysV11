@@ -1,0 +1,113 @@
+/*Styling Header, Footer and The base of Main Page*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f0daff;
+    background-image: linear-gradient(#f7ebff , #e6a9cb);
+    color: #333;
+}
+
+body.darkTheme {
+    background-color: #1a171b;
+    background-image: linear-gradient(#100d13 , #550c34);
+    color: #eee;
+}
+
+.mainPage {
+    margin-top: 10%;
+    text-align: center;
+}
+
+header, footer {
+    color: white;
+    padding: 6px 0;
+    padding-left: 2%;
+    padding-right: 2%;
+    width: 100%;
+    position: fixed;
+}
+
+header {
+    justify-content: center;
+    background-color: hsl(281, 100%, 77%);
+    text-align: center;
+    font-size: 18px;
+    top: 0;
+    max-height: 20%;
+}
+
+header .topPart {
+    width: 90%;
+    font-size: 20px;
+    justify-content: center;
+    display: flex;
+    flex: 15px;
+    margin-left: 60px;
+    margin-right: 60px;
+}
+
+header img {
+    max-width: 60px;
+    max-height: 60px;
+}
+
+.tPBorder {
+    width: 30%;
+}
+
+.tPBorderR {
+    align-items: center;
+    display: flex;
+    flex: auto;
+}
+
+.tPBorderR img {
+    max-width: 20px;
+    max-height: 20px;
+}
+
+footer {
+    background-color: #df4ecb;
+    font-size: 10px;
+    min-height: 15px;
+    bottom: 0;
+    width: 100%;
+}
+
+header a {
+    display: block;
+    text-align: center;
+    padding: 10px 12px;
+    text-decoration: none;
+}
+
+header a:hover {
+    background: #ddd;
+    color: black;
+}
+
+.headerButton {
+    margin: auto;
+    width: 25%;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.headerButtonGroup {
+    width: 90%;
+    justify-content: center;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+a:link, a:visited, a:hover, a:active { 
+    text-decoration: none;
+}

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../css/style.css">
+        <link rel="stylesheet" href="../css/styleLogIn.css">
+        <script src="../js/scriptSignIn.js"></script>
+        <script src="../js/scriptDarkMode.js"></script>
+        <title>PC Picker Log-In</title>
+    </head>
+    <body>
+        <div class="mainPage">
+            <a class="backButton" href="../indexHome.html">Go Back to Homepage</a>
+            <div class="inForm">
+                <div class="eForm">
+                    <br>
+                    <h1>Sign-In</h1>
+                    <form id="signInForm">
+                        <label for="username">Username:</label><br>
+                        <input type="text" placeholder="Username" name="username" id="username" required><br>
+                        <label for="email">E-Mail Address:</label><br>
+                        <input type="email" placeholder="E-Mail" name="email" id="email" required><br>
+                        <label for="phone">Phone Number:</label><br>
+                        <input type="tel" placeholder="000-000-0000" name="phone" id="phone"  pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required><br>
+                        <label for="password">Password:</label><br>
+                        <input type="password" placeholder="Password" name="password" id="password" required><br><br>
+                        <button type="submit">Sign In</button>
+                    </form>
+                    <br>
+                    <hr>
+                    <br>
+                    <div>
+                        <h4>Aready have an account? <a href="indexLogIn.html">Log-In here</a></h4>
+                    </div>
+                    <br>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

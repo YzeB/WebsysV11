@@ -1,0 +1,166 @@
+.mainPage {
+    display: flex;
+    margin-left: 20px;
+    text-align: left;
+}
+
+#newpost {
+    display: none;
+}
+
+header {
+    margin-bottom: 125px;
+}
+
+.content {
+    padding-top: 125px;
+    flex: 2px;
+    margin-right: 0px;
+}
+
+.sidebar {
+    flex: 0.25;
+    background-color: rgb(255, 131, 207);
+    padding: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);   
+}
+
+.create {
+    background-color: rgb(255, 131, 207);
+    margin-left: 15px;
+    margin-bottom: 20px;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.createposttitle {
+    font-size: 18px;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.createpostcontent {
+    font-size: 16px;
+}
+
+.create #createpost {
+    size: 10px;
+    padding: 2px;
+}
+
+.post {
+    background-color: rgb(255, 131, 207);
+    margin-left: 15px;
+    margin-bottom: 20px;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.posttitle {
+    font-size: 20px;
+    margin-bottom: 2px;
+    font-weight: bold;
+}
+
+.postuser {
+    font-size: 12px;
+    margin-bottom: 5px;
+}
+
+.postcontent {
+    font-size: 16px;
+}
+
+.postcontent i {
+    color: #d1d1d1;
+}
+
+.comment {
+    background-color: #f0f0f0;
+    margin-top: 10px;
+    padding: 10px;
+    border-radius: 3px;
+    font-size: 14px;
+}
+
+.replyTextarea {
+    width: 100%;
+    margin-top: 10px;
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.replySubmitButton {
+    margin-top: 5px;
+    padding: 5px 10px;
+    background-color: #007bff;
+    background-color: rgb(255, 131, 207);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.replySubmitButton:hover {
+    background-color: #0056b3;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+
+.settingsIcon {
+    width: 32px;
+    height: 32px;
+    cursor: pointer;
+}
+
+body.darkTheme {
+    background-color: #121212;
+}
+
+.create, .post, .comment {
+    background-color: rgb(255, 131, 207);
+    color: black;
+}
+
+.comment {
+    background-color: #f0f0f0;
+}
+
+.dropdown-content {
+    background-color: #f9f9f9;
+}
+
+.dropdown-content a {
+    color: black;
+}
+
+@media (max-width: 768px) {
+    .title, #homepage, .recentPosts {
+        width: 80%;
+    }
+}
